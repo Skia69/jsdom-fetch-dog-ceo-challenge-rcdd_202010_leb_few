@@ -83,10 +83,10 @@ function loadImages() {
 }
 
 
-function renderBreed(breed) {
+const renderBreed = (breed) => {
   const li = document.createElement("li")
-  li.textContent = breed
-  dogList.append(li)
+  let content = `<li>${breed}</li>` 
+  dogList.insertAdjacentHTML = content
 }
 
 function loadBreeds() {
